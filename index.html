@@ -167,6 +167,13 @@ nav a:hover{color:var(--white)}
 .acc-link{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:8px 18px 8px 14px;border-radius:6px;white-space:nowrap;transition:all .2s}
 .acc-link:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
 
+/* ═══ MY RIDES GALLERY ═══ */
+.rides-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:24px}
+.rides-grid a{display:block;overflow:hidden;border-radius:6px;aspect-ratio:4/3;position:relative}
+.rides-grid a img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease,filter .4s ease;filter:brightness(.85)}
+.rides-grid a:hover img{transform:scale(1.06);filter:brightness(1)}
+.rides-grid a .ride-num{position:absolute;bottom:8px;left:8px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--safety);opacity:.7;pointer-events:none}
+
 /* ═══ FOOTER ═══ */
 footer{background:var(--void);border-top:1px solid var(--border-dark);padding:40px clamp(20px,5vw,80px)}
 .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
@@ -193,6 +200,7 @@ footer{background:var(--void);border-top:1px solid var(--border-dark);padding:40
   .gallery-item{width:180px;height:130px}
   .spec-strip{grid-template-columns:repeat(2,1fr);row-gap:24px}
   .spec-strip .spec-item{border-left:none;padding-left:0}
+  .rides-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (prefers-reduced-motion: reduce){
   .ticker-track,.logo-mark,.wheel-rotor,.part,.leader,.scanline,.cursor,.reveal{animation:none!important;transition:none!important}
@@ -217,6 +225,7 @@ footer{background:var(--void);border-top:1px solid var(--border-dark);padding:40
   <nav>
     <a href="#protective-gear">Protective Gear</a>
     <a href="#action-camera">Action Camera</a>
+    <a href="#my-rides">My Rides</a>
   </nav>
 </header>
 
@@ -456,6 +465,31 @@ footer{background:var(--void);border-top:1px solid var(--border-dark);padding:40
     <div class="acc-item reveal"><div class="acc-left"><span class="acc-num">08</span><div class="acc-name">Aluminum Frame Cage + Lens Cap (Ace Pro 2)<span class="acc-role">For the older Ace Pro 2, kept as a backup body</span></div></div><a class="acc-link notch" href="https://amzn.to/4q1JKPF" target="_blank" rel="noopener nofollow sponsored">View →</a></div>
     <div class="acc-item reveal"><div class="acc-left"><span class="acc-num">09</span><div class="acc-name">Plastic Frame Cage w/ Cold Shoe Mount (Ace Pro 2/Ace)<span class="acc-role">Alternate cage with accessory mount point</span></div></div><a class="acc-link notch" href="https://amzn.to/4h4O4eB" target="_blank" rel="noopener nofollow sponsored">View →</a></div>
     <div class="acc-item reveal"><div class="acc-left"><span class="acc-num">10</span><div class="acc-name">Insta360 Quick Release Mount (X3/ONE RS/X2/R/X)<span class="acc-role">Older-camera mount compatibility</span></div></div><a class="acc-link notch" href="https://amzn.to/4fS9CZP" target="_blank" rel="noopener nofollow sponsored">View →</a></div>
+  </div>
+</section>
+
+<section id="my-rides" class="section-dark section-pad">
+  <div class="glitch-strip" aria-hidden="true"></div>
+  <div class="section-eyebrow reveal"><span>⚡</span> [ MY RIDES ]</div>
+  <h2 class="section-title reveal">Years of PEV riding.</h2>
+  <p class="section-desc reveal">EUCs, e-bikes, electric mopeds, dirt bikes — if it has a battery and wheels, I've probably ridden it. Here's a look at some of the machines I've owned and the places they've taken me.</p>
+  <div class="rides-grid">
+    <a class="reveal" href="images/rides/ride-01.jpg" target="_blank"><img src="images/rides/ride-01.jpg" alt="EUC with knobby tire, driveway" loading="lazy"><span class="ride-num">01</span></a>
+    <a class="reveal" href="images/rides/ride-02.jpg" target="_blank"><img src="images/rides/ride-02.jpg" alt="Customized EUC with red, blue, and yellow accents" loading="lazy"><span class="ride-num">02</span></a>
+    <a class="reveal" href="images/rides/ride-03.jpg" target="_blank"><img src="images/rides/ride-03.jpg" alt="Green EUC with LED ring lights" loading="lazy"><span class="ride-num">03</span></a>
+    <a class="reveal" href="images/rides/ride-04.jpg" target="_blank"><img src="images/rides/ride-04.jpg" alt="EUC charging outdoors among tropical plants" loading="lazy"><span class="ride-num">04</span></a>
+    <a class="reveal" href="images/rides/ride-05.jpg" target="_blank"><img src="images/rides/ride-05.jpg" alt="Top-down view of EUC showing knobby tires and orange detail" loading="lazy"><span class="ride-num">05</span></a>
+    <a class="reveal" href="images/rides/ride-06.jpg" target="_blank"><img src="images/rides/ride-06.jpg" alt="EUC silhouette by the ocean with palm trees" loading="lazy"><span class="ride-num">06</span></a>
+    <a class="reveal" href="images/rides/ride-07.jpg" target="_blank"><img src="images/rides/ride-07.jpg" alt="EUC overhead on pavement in golden hour light" loading="lazy"><span class="ride-num">07</span></a>
+    <a class="reveal" href="images/rides/ride-08.jpg" target="_blank"><img src="images/rides/ride-08.jpg" alt="Colorful EUC at the waterfront" loading="lazy"><span class="ride-num">08</span></a>
+    <a class="reveal" href="images/rides/ride-09.jpg" target="_blank"><img src="images/rides/ride-09.jpg" alt="Two EUCs leaning against a railing with city skyline" loading="lazy"><span class="ride-num">09</span></a>
+    <a class="reveal" href="images/rides/ride-10.jpg" target="_blank"><img src="images/rides/ride-10.jpg" alt="EUC on a pier overlooking the water" loading="lazy"><span class="ride-num">10</span></a>
+    <a class="reveal" href="images/rides/ride-11.jpg" target="_blank"><img src="images/rides/ride-11.jpg" alt="EUC at a beach overlook with ocean panorama" loading="lazy"><span class="ride-num">11</span></a>
+    <a class="reveal" href="images/rides/ride-12.jpg" target="_blank"><img src="images/rides/ride-12.jpg" alt="EUC on brick terrace with coastal city view and palm tree" loading="lazy"><span class="ride-num">12</span></a>
+    <a class="reveal" href="images/rides/ride-13.jpg" target="_blank"><img src="images/rides/ride-13.jpg" alt="EUC parked between library bookshelves" loading="lazy"><span class="ride-num">13</span></a>
+    <a class="reveal" href="images/rides/ride-14.jpg" target="_blank"><img src="images/rides/ride-14.jpg" alt="Colorful modded EUC from above with sharp shadow" loading="lazy"><span class="ride-num">14</span></a>
+    <a class="reveal" href="images/rides/ride-15.jpg" target="_blank"><img src="images/rides/ride-15.jpg" alt="Orange-framed EUC with exposed suspension" loading="lazy"><span class="ride-num">15</span></a>
+    <a class="reveal" href="images/rides/ride-16.jpg" target="_blank"><img src="images/rides/ride-16.jpg" alt="Red and blue EUC close-up with speaker" loading="lazy"><span class="ride-num">16</span></a>
   </div>
 </section>
 
