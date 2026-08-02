@@ -96,12 +96,6 @@ nav a:hover{color:var(--white)}
 .anatomy-text h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(24px,3vw,34px);color:var(--white);line-height:1.12;letter-spacing:-.3px;margin-bottom:16px}
 .anatomy-text p{font-size:15px;color:var(--steel-light);line-height:1.65}
 
-/* Wheel diagnostic terminal */
-.wheel-terminal{margin-top:26px;background:#0D0D0F;border:1px solid var(--border-dark);border-radius:8px;padding:18px 20px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.9;color:#8A939E;max-width:440px}
-.wheel-terminal .ok{color:#3ECF8E}
-.wheel-terminal .prompt{color:var(--safety)}
-.wheel-terminal .cursor{display:inline-block;width:7px;height:13px;background:var(--safety);vertical-align:middle;margin-left:4px;animation:blink 1s step-end infinite}
-@keyframes blink{50%{opacity:0}}
 
 /* Spec stat strip */
 .spec-strip{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--border-dark);margin-top:56px;padding-top:28px}
@@ -200,7 +194,7 @@ footer{background:var(--void);border-top:1px solid var(--border-dark);padding:40
   .rides-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (prefers-reduced-motion: reduce){
-  .ticker-track,.logo-mark,.cursor,.reveal{animation:none!important;transition:none!important}
+  .ticker-track,.logo-mark,.reveal{animation:none!important;transition:none!important}
 }
 </style>
 </head>
@@ -280,14 +274,6 @@ footer{background:var(--void);border-top:1px solid var(--border-dark);padding:40
     </div>
     <h2>Veteran Sherman L</h2>
     <p>3,600Wh battery. 40+ mph top speed. 100+ mile range. A 77lb tank that eats potholes, commutes, and night rides. This is what every piece of gear on this site is built around.</p>
-    <div class="wheel-terminal" aria-hidden="true">
-      <div>&gt; Scanning wheel...</div>
-      <div>&gt; Model: Veteran Sherman&nbsp;L</div>
-      <div>&gt; Battery: 3600Wh · Dual pack</div>
-      <div>&gt; Top speed: 40+ mph · Range: 100+ mi</div>
-      <div><span class="ok">✓</span> Ready. Crash-tested: 1</div>
-      <div><span class="prompt">λ</span> ride<span class="cursor"></span></div>
-    </div>
   </div>
  </div>
  <div class="spec-strip reveal">
